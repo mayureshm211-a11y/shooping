@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Options</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .payment-container {
+      max-width: 400px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .option { margin: 10px 0; font-size: 18px; }
+    button {
+      background: #f4c542;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover { background: #e0a800; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Choose Payment Method</h1>
+  </header>
+
+  <main class="payment-container">
+    <form action="thankyou.html" method="get">
+      <div class="option">
+        <label><input type="radio" name="payment" value="UPI" required> 💰 UPI / GPay / PhonePe</label>
+      </div>
+      <div class="option">
+        <label><input type="radio" name="payment" value="Card"> 💳 Debit / Credit Card</label>
+      </div>
+      <div class="option">
+        <label><input type="radio" name="payment" value="NetBanking"> 🏦 Net Banking</label>
+      </div>
+      <div class="option">
+        <label><input type="radio" name="payment" value="COD"> 🚚 Cash on Delivery</label>
+      </div>
+      <button type="submit">Pay Now / Place Order</button>
+    </form>
+  </main>
+</body>
+</html>

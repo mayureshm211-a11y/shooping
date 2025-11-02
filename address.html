@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Delivery Address</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to top, #d4fc79, #96e6a1);
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Enter Your Delivery Address</h2>
+    <form action="payment.html" method="get">
+      <label>Full Name:</label>
+      <input type="text" required>
+
+      <label>Mobile Number:</label>
+      <input type="number" required placeholder="10-digit mobile number">
+
+      <label>Flat, House no., Building, Apartment:</label>
+      <input type="text" required>
+
+      <label>Area, Street, Sector, Village:</label>
+      <input type="text" required>
+
+      <label>Landmark:</label>
+      <input type="text" placeholder="Near Apollo Hospital">
+
+      <label>Pincode:</label>
+      <input type="number" required>
+
+      <label>Town/City:</label>
+      <input type="text" required>
+
+      <label>State:</label>
+      <select required>
+        <option value="">Select</option>
+        <option>Maharashtra</option>
+        <option>Gujarat</option>
+        <option>Delhi</option>
+        <option>Karnataka</option>
+      </select>
+
+      <button type="submit">Proceed to Payment</button>
+    </form>
+  </div>
+</body>
+</html>

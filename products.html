@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Saraschan Joyera</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Saraschan Joyera</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <nav id="menu">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+    </nav>
+  </header>
+
+  <h1 class="title">Our Jewellery Collection</h1>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="C:\Users\mayur\Downloads\naklace.jpg" alt="Necklace">
+      <h3>Royal Gold Necklace</h3>
+      <p class="price">₹125,000</p>
+      <button class="btn" onclick="addToCart('Royal Gold Necklace',125000)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="C:\Users\mayur\Downloads\Diamond ring.jpg" alt="Ring">
+      <h3>Diamond Ring</h3>
+      <p class="price">₹115,500</p>
+      <button class="btn" onclick="addToCart('Diamond Ring',115500)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="C:\Users\mayur\Downloads\Earing.jpg" alt="Earrings">
+      <h3>Elegant Earrings</h3>
+      <p class="price">₹112,000</p>
+      <button class="btn" onclick="addToCart('Elegant Earrings',112000)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="C:\Users\mayur\Downloads\Bangles.jpg" alt="Bangles">
+      <h3>Traditional Bangles</h3>
+      <p class="price">₹82,000</p>
+      <button class="btn" onclick="addToCart('Traditional Bangles',82000)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="C:\Users\mayur\Downloads\bracelet.jpg" alt="Bracelet">
+      <h3>Gold Bracelet</h3>
+      <p class="price">₹91,500</p>
+      <button class="btn" onclick="addToCart('Gold Bracelet',91500)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="C:\Users\mayur\Downloads\Pendant.jpg" alt="Pendant">
+      <h3>Stylish Pendant</h3>
+      <p class="price">₹12,500</p>
+      <button class="btn" onclick="addToCart('Stylish Pendant',12500)">Add to Cart</button>
+    </div>
+  </section>
+
+  <div class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cartItems"></ul>
+    <p><b>Total: ₹<span id="total">0</span></b></p>
+<a href="address.html">
+  <button>Proceed to Buy</button>
+</a>
+  
+
+  <div class="payment" id="paymentBox">
+  
+
+ 
+
+  <footer>
+    <p>&copy; <span id="year"></span> Saraschan Joyera. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>
